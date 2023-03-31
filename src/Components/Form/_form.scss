@@ -1,0 +1,73 @@
+.form__container{
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    color: white;
+    & > .left{
+        width: 40%;
+        background-color: #1DB954;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+        text-align: left;
+        padding-left: 2rem;
+        height: 90vh;
+        & > h2, p,ul{
+            margin: 0;
+        }
+        & > h2{
+            font-size: 2rem;
+            font-weight: 700;
+          
+        }
+        &> .premium{
+            padding-left:2rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 5px;
+        }
+        & > .price{
+            font-size: 2rem;
+            font-weight: 700;
+            padding-left: 2rem;
+            margin-top: 1rem;
+            & > span{
+                font-size: 0.8rem;
+            }
+        }
+        & ul{
+            padding-left: 3.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+        }
+        & > .bottom{
+            padding-left: 2rem;
+            margin-top: 1rem;
+            
+        }& > .access__rights{
+                font-size: 0.6rem;
+            }
+
+    }
+    & > .right{
+        width: 60%;
+        background-color: rgb(69, 67, 67);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 90vh;
+        &> .logo{
+            & > img{
+height: 40px;
+            }
+        }
+    }
+}
