@@ -33,25 +33,25 @@ const SignupForm = () => {
             <div className='input__field'>
               <label htmlFor="name">Name</label>
               <Field type="text" name="name" />
-              <ErrorMessage name="name" />
+              {/* <p className='error'> <ErrorMessage name="name" /></p> */}
             </div>
 
             <div className='input__field'>
               <label htmlFor="email">Email</label>
               <Field type="email" name="email" />
-              <ErrorMessage name="email" />
+              {/* <p className='error'> <ErrorMessage name="email" /></p> */}
             </div>
 
             <div className='input__field'>
               <label htmlFor="password">Password</label>
               <Field type="password" name="password" />
-              <ErrorMessage name="password" />
+              {/* <p className='error'> <ErrorMessage name="password" /></p> */}
             </div>
 
             <div className='input__field'>
               <label htmlFor="confirmPassword">Confirm Password</label>
               <Field type="password" name="confirmPassword" />
-              <ErrorMessage name="confirmPassword" />
+             {/* <p className='error'> <ErrorMessage name="confirmPassword" /></p> */}
             </div>
 
             <button  className="login__btn" type="submit">
