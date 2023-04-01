@@ -71,5 +71,31 @@
         height: 40px;
       }
     }
+    & > .auth__container{
+        padding-left: 3rem;
+        & > .links{
+            display: flex;
+             justify-content: flex-start;
+            // align-items: center;
+            gap: 1rem;
+            list-style: none;
+            margin: 0 !important;
+            padding: 0 !important;
+            & > a{
+                color: #fff !important;
+                font-size: 1.3rem;
+                text-decoration: none;
+                &:hover,:focus,:active {
+                    color: red;
+                    text-decoration: none;
+                    color: inherit;
+               }
+            }
+            .active{
+                color: gray !important;
+            }
+        }
+         
+    }
   }
 }

@@ -1,0 +1,29 @@
+.input__field {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  & > input {
+    width: 60%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.login__btn{
+    cursor: pointer;
+    background-color: #1db954;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 10rem;
+    margin-top: 1.5rem;
+    &:hover{
+        background-color:#137636;
+    }
+}

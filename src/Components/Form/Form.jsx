@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../Assets/spotify.png";
-import { Link, Outlet, useParams } from "react-router-dom";
+import { Link, NavLink, Outlet, useParams } from "react-router-dom";
 
 const Form = () => {
- 
-  const [path,setPath] = useState('/');
-  useEffect(()=>{
-    const location = window.location.pathname;
-    setPath(location)
-  },[window.location.pathname])
-    const benefits = [
+  const benefits = [
     "Shuffle play",
     "Add free",
     "Unlimited Skip",
@@ -17,14 +11,7 @@ const Form = () => {
     "Play any track",
     "Hight quality audio",
   ];
-  const Login = () => {
-    return <p>login</p>;
-  };
 
-  const SignUp = () => {
-    return <p>Sign Up</p>;
-  };
- 
   return (
     <div className="form__container">
       <div className="left">
@@ -41,13 +28,12 @@ const Form = () => {
         <div className="bottom">
           <p>start your 30 days free trial</p>
           <p>
-            {" "}
             <strong>Family</strong> and <strong>student</strong> offer available
           </p>
         </div>
         <p className="access__rights">
           An access right is the right to perform a particular operation on the
-          object. For example{" "}
+          object. For example
         </p>
       </div>
       <div className="right">
@@ -55,16 +41,18 @@ const Form = () => {
           <img src={logo} alt="" />
         </div>
         <div className="auth__container">
-          <Link to="login">
-            <button>Login</button>
-          </Link>
-          <Link to="sign">
-          <button>Sign Up</button>
-          </Link>
+          <div className="links">
+          <NavLink to="login">
+            <p>Login</p>
+          </NavLink>
+          <NavLink to="sign">
+            <p>Sign Up</p>
+          </NavLink>
+          </div>
+         
           <div className="form">
-          <Outlet />
-            
-          </div> 
+            <Outlet />
+          </div>
         </div>
       </div>
     </div>
